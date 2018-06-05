@@ -18,5 +18,10 @@ describe Bookmark do
         bookmark.add(url: website)
         expect(bookmark.all).to include website
       end
+
+      it "raises error if invalid URL" do
+        website = "not a bookmark"
+        expect{ bookmark.add(url: website) }.to raise_error "That is not a valid URL."
+      end
     end
 end
