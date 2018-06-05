@@ -16,5 +16,3 @@ Comment on Links
 Tag bookmarks into categories
 Filter bookmarks by tag
 Users manage their bookmarks  
-
-Angus's readme
