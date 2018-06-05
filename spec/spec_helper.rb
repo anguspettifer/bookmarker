@@ -1,6 +1,6 @@
 require_relative './setup_test_database'
 
-ENV['RACK_ENV'] = 'test'
+#ENV['RACK_ENV'] = 'test' feels like this doesn't do anything
 ENV['ENVIRONMENT'] = 'test'
 
 require File.join(File.dirname(__FILE__), '..', 'app.rb')

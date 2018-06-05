@@ -1,8 +1,8 @@
-require 'bookmark'
+#require 'bookmark'
 
 describe Bookmark do
     subject(:bookmark) { described_class }
-    describe '#list' do
+    describe '.all' do
         it 'returns bookmarks' do
             connection = PG.connect(dbname: 'bookmark_manager_test')
 
@@ -10,5 +10,13 @@ describe Bookmark do
             values = ["https://www.facebook.com"]
             expect(bookmark.all).to eq values
         end
+    end
+
+    describe '.add' do
+      it "adds a new bookmark" do
+        website = "https://www.facebook.com"
+        bookmark.add(url: website)
+        expect(bookmark.all).to include website
+      end
     end
 end
