@@ -15,4 +15,4 @@ Update bookmarks
 Comment on Links
 Tag bookmarks into categories
 Filter bookmarks by tag
-Users manage their bookmarks 
+Users manage their bookmarks  
